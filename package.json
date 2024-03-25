@@ -10,11 +10,17 @@
   },
   "dependencies": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "@headlessui/react": "^1.7.18",
 =======
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-navigation-menu": "^1.1.4",
 >>>>>>> 6ec9c6ef99c1d7a1b996d65836b9bc4b5cb5ae11
+=======
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-navigation-menu": "^1.1.4",
+    "@headlessui/react": "^1.7.18",
+>>>>>>> c25f949cedbc7943b89b755eafe766c51a95c1df
     "@radix-ui/react-slot": "^1.0.2",
     "@reduxjs/toolkit": "^2.2.2",
     "class-variance-authority": "^0.7.0",
