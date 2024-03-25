@@ -229,8 +229,8 @@ const Footer = (props: Props) => {
               <li>
                 <Image
                   src="/img/google_play.webp"
-                  width={500}
-                  height={500}
+                    width={100}
+                  height={100}
                   alt="Picture of the author"
                 />
               </li>
