@@ -9,7 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@headlessui/react": "^1.7.18",
+=======
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-navigation-menu": "^1.1.4",
+>>>>>>> 6ec9c6ef99c1d7a1b996d65836b9bc4b5cb5ae11
     "@radix-ui/react-slot": "^1.0.2",
     "@reduxjs/toolkit": "^2.2.2",
     "class-variance-authority": "^0.7.0",
@@ -18,6 +23,7 @@
     "lucide-react": "^0.363.0",
     "next": "14.1.4",
     "next-intl": "^3.9.5",
+    "nextjs-progressbar": "^0.0.16",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.0.1",
