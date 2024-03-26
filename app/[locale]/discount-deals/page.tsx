@@ -9,7 +9,7 @@ function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
 }
 
-const discount_deals = (props: Props) => {
+const Discount_deals = (props: Props) => {
   let [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
@@ -72,7 +72,7 @@ const discount_deals = (props: Props) => {
             <Banner
               heading="Deals and Steals."
               sub_heading="Dive into a World of Savings with Our Exclusive Offers Just for You"
-              url={"/deals/discount.webp"}
+              img_url={"/deals/discount.webp"}
               features={["X% OFF", "Bundle Deals", "Free Shipping"]}
             />
             <div className="container my-16">
@@ -159,7 +159,7 @@ const discount_deals = (props: Props) => {
                                     libraries, institutions, or avid collectors,
                                     this special offer grants you a generous 25%
                                     discount on bulk orders over 2 lakhs.
-                                    Whether you're expanding your collection or
+                                    Whether youre expanding your collection or
                                     stocking up for a community, this deal is
                                     perfect for getting more books for less.
                                   </p>
@@ -208,7 +208,7 @@ const discount_deals = (props: Props) => {
               </div>
               <div>
 
-            <button className="bg-transparent  hover:bg-indigo-800 ease-in duration-200 text-indigo-800 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-indigo-800 hover:border-transparent rounded">
+            <button className="bg-transparent  hover:bg-indigo-800 ease-in duration-200 text-indigo-800  font-semibold hover:text-white py-2 px-4 border border-indigo-800 hover:border-transparent rounded">
               Explore Books
               </button>
               </div>
@@ -221,7 +221,7 @@ const discount_deals = (props: Props) => {
             <h2 className="text-2xl font-semibold ">Discount Deals</h2>
             <p className="text-sm mb-4">Discount Deals. Save money with flat or percentage discounts</p>
             <div className="bg-[#F1F1F1] h-48 rounded-md w-full flex justify-center items-center">
-            <button className="bg-transparent  hover:bg-indigo-800 ease-in duration-200 text-indigo-800 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-indigo-800 hover:border-transparent rounded">
+            <button className="bg-transparent  hover:bg-indigo-800 ease-in duration-200 text-indigo-800  font-semibold hover:text-white py-2 px-4 border border-indigo-800 hover:border-transparent rounded">
               Explore Books
               </button>
 
@@ -231,12 +231,31 @@ const discount_deals = (props: Props) => {
             </div>
             </div>
           </Tab.Panel>
-          <Tab.Panel>Content 2</Tab.Panel>
-          <Tab.Panel>Content 3</Tab.Panel>
+          <Tab.Panel>
+          <div>
+          <Banner
+              heading="Deals and Steals."
+              sub_heading="Dive into a World of Savings with Our Exclusive Offers Just for You"
+              img_url={"/deals/discount.webp"}
+              features={["X% OFF", "Bundle Deals", "Free Shipping"]}
+            />
+          </div>
+          </Tab.Panel>
+          <Tab.Panel>
+            <div>
+
+          <Banner
+              heading="Deals and Steals."
+              sub_heading="Dive into a World of Savings with Our Exclusive Offers Just for You"
+              img_url={"/deals/discount.webp"}
+              features={["X% OFF", "Bundle Deals", "Free Shipping"]}
+              />
+              </div>
+          </Tab.Panel>
         </Tab.Panels>
       </Tab.Group>
     </>
   );
 };
 
-export default discount_deals;
+export default Discount_deals;
