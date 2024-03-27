@@ -10,10 +10,10 @@ type Props = {
 const Login = (props: Props) => {
   return (
     <>
-      <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-2 lg:px-8">
+      <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-4 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm relative">
           <RxCross1
-            className="ml-auto text-xl font-bold absolute right-[-2rem]  hover:text-2xl"
+            className="ml-auto text-xl font-bold absolute right-[-2rem] top-[-1rem]  hover:text-2xl"
             onClick={() => props.setIsOpen(false)}
           />
           <div className=" border-solid-slate-200 mt-2 flex justify-center p-2 border-2 hover:shadow-sm hover:border-solid-slate-400 hover:cursor-pointer">
@@ -42,7 +42,7 @@ const Login = (props: Props) => {
                   type="email"
                   autoComplete="email"
                   required
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="block p-2 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -71,7 +71,7 @@ const Login = (props: Props) => {
                   type="password"
                   autoComplete="current-password"
                   required
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="block w-full p-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
