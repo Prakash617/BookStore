@@ -11,6 +11,7 @@ import { Popover } from "@headlessui/react";
 import Login from "./Login";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
+import Signup from "./Signup";
 
 type Props = {};
 
@@ -90,6 +91,7 @@ const Navbar = (props: Props) => {
                     >
                       <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                        <Login setIsOpen= {setIsOpen} />
+                       {/* <Signup/> */}
                       </Dialog.Panel>
                     </Transition.Child>
                   </div>

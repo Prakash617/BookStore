@@ -1,13 +1,25 @@
-import Image from "next/image";
 import React from "react";
 import { RxCross1 } from "react-icons/rx";
 import { FcGoogle } from "react-icons/fc";
+import { Dialog, Transition } from "@headlessui/react";
+import { Fragment, useState } from "react";
+import Signup from "./Signup";
 
 type Props = {
   setIsOpen: any;
 };
 
 const Login = (props: Props) => {
+  let [isOpen, setIsOpen] = useState(false);
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+  function openModal() {
+    props.setIsOpen(false);
+    setIsOpen(true);
+  }
   return (
     <>
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-4 lg:px-8">
@@ -83,17 +95,66 @@ const Login = (props: Props) => {
             </div>
           </form>
 
-          <p className="mt-10 text-center text-sm text-gray-500">
+          {/* <p className="mt-10 text-center text-sm text-gray-500">
             Not a member?{" "}
             <a
               href="#"
               className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
             >
-              Start a 14 day free trial
+              Sign Up
             </a>
-          </p>
+          </p> */}
+          <div className=" flex items-center justify-center" onClick={() =>  props.setIsOpen(false)}>
+          
+            <p className="mt-10 text-center text-sm text-gray-500">
+              Not a member?{" "}
+              <a
+                onClick={openModal}
+                // onClick={() =>  props.setIsOpen(false)}
+                className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
+              >
+                Sign Up
+              </a>
+            </p>
+          </div>
         </div>
       </div>
+      <Transition appear show={isOpen} as={Fragment}>
+        <Dialog as="div" className="relative z-10" onClose={closeModal}>
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-black/25" />
+          </Transition.Child>
+
+          <div className="fixed inset-0 overflow-y-auto">
+            <div className="flex min-h-full items-center justify-center p-4 text-center">
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
+              >
+                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                  {/* <Login setIsOpen= {setIsOpen} /> */}
+                  <span >
+                    <Signup />
+                  </span>
+                </Dialog.Panel>
+              </Transition.Child>
+            </div>
+          </div>
+        </Dialog>
+      </Transition>
     </>
   );
 };
