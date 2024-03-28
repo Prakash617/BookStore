@@ -1,12 +1,13 @@
-"use client";
-import React from "react";
-import NextNProgress from "nextjs-progressbar";
-import Image from "next/image";
-import Link from "next/link";
-import BooksMenu from "./BooksMenu";
-import SearchBar from "./SearchBar";
-import { MoonIcon, ShoppingCart } from "lucide-react";
-import LanguageSwitcher from "./LanguageSwitcher";
+'use client'
+import React from 'react'
+import NextNProgress from 'nextjs-progressbar';
+import Image from 'next/image';
+import Link from 'next/link';
+import BooksMenu from './BooksMenu/BooksMenu';
+import SearchBar from './SearchBar';
+import { MoonIcon, ShoppingCart } from 'lucide-react';
+import LanguageSwitcher from './LanguageSwitcher';
+import { usePathname } from 'next/navigation';
 import { Popover } from "@headlessui/react";
 import Login from "./Login";
 import { Dialog, Transition } from "@headlessui/react";
@@ -16,7 +17,10 @@ import Signup from "./Signup";
 type Props = {};
 
 const Navbar = (props: Props) => {
-  let [isOpen, setIsOpen] = useState(false);
+
+  const pathName = usePathname()
+  const segments = pathName.split('/')
+  let [isOpen, setIsOpen] = useState(true);
 
   function closeModal() {
     setIsOpen(false);
@@ -28,10 +32,10 @@ const Navbar = (props: Props) => {
   return (
     <>
       <NextNProgress />
-      <div className="py-5 px-16 shadow-md">
-        <div className="flex items-center md:justify-center lg:justify-between">
-          <div className="flex gap-3 items-center text-lg">
-            <Image
+      <div className='py-5 px-32 shadow-md'>
+        <div className='flex items-center md:justify-center lg:justify-between'>
+          <div className='flex gap-3 items-center text-lg'>
+              <Image
               alt="booksmandala logo"
               loading="lazy"
               width={"200"}
@@ -43,12 +47,8 @@ const Navbar = (props: Props) => {
               src="/ul53R1493KevFx63fFFnk7Nduk8qaz2BqtdT8mYP.gif"
               style={{ color: "transparent" }}
             />
-            <span className="">
-              <BooksMenu />
-            </span>
-            <Link className="hover:text-sky-600" href="/en/discount-deals">
-              Deals
-            </Link>
+            <span className=''><BooksMenu /></span>
+            <Link className='hover:text-sky-600' href={'/' + segments[1] + '/discount-deals'}>Deals</Link>
           </div>
           <div className="flex gap-3 items-center text-lg">
             <SearchBar />
