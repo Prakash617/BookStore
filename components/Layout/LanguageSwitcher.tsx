@@ -16,7 +16,6 @@ type Props = {}
 const LanguageSwitcher = (props: Props) => {
 
     const pathName = usePathname()
-    console.log(pathName)
 
 
     const redirectedPathName = (lang: string) => {
