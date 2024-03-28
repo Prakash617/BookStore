@@ -1,16 +1,16 @@
 import React from 'react'
 
 type Props = {
-    url : string
+    img_url : string
     heading: string
     sub_heading: string
     features : any
 }
 
 const Banner = (props: Props) => {
-    const {url,heading, sub_heading,features} = props
+    const {img_url,heading, sub_heading,features} = props
    return (
-    <div className="flex items-center bg-[url('/deals/discount.webp')] h-[16rem]">
+  <div className={`flex items-center bg-[url('/deals/discount.webp')] h-[16rem]`}>
       <div className="container">
         <div className="text-white">
 
