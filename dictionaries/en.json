@@ -43,6 +43,11 @@
       "title": "Best Sellers",
       "sub-title": "Find Your Next Great Read Among Our Best Sellers.",
       "showAll": "Show All"
+    },
+    "newArrivals":{
+      "title": "New Arrivals",
+      "sub-title":"Explore Fresh Arrivals and Find Your Next Great Read.",
+      "showAll": "Show All"
     }
   },
   "components": {

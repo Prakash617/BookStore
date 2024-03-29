@@ -4,9 +4,9 @@ import React, { Fragment } from 'react'
 
 type Props = {}
 
-const BestSeller = (props: Props) => {
+const NewArrivals = (props: Props) => {
 
-    const t = useTranslations('home.bestSeller');
+    const t = useTranslations('home.newArrivals');
 
     return (
         <>
@@ -18,17 +18,15 @@ const BestSeller = (props: Props) => {
                         Array(5).fill(".").map((_, index: number) => {
                             return (
                                 <Fragment key={index}>
-                                    <ProductCard title='Bhagavad Gita As It Is' imageUrl='/deleteBookBhagwatGita.webp' price='670' author='Bhaktivedanta Swami' />
+                                    <ProductCard title='The Personal MBA' imageUrl='/deleteBookMba.webp' price='670' author='Josh Kaufman' />
                                 </Fragment>
                             )
                         })
-
                     }
-
                 </div>
             </div>
         </>
     )
 }
 
-export default BestSeller
+export default NewArrivals
