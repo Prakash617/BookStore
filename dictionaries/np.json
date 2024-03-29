@@ -1,6 +1,59 @@
 {
-    "IndexPage": {
-      "title": "next-intl example",
-      "description": "aosudhuiashdiuh."
+  "home": {
+    "genre": {
+      "title": "विधाहरू",
+      "sub-title": "हाम्रो विभिन्न विधाहरुको किताबहरूको व्यापक संग्रहहरू ब्राउज गर्नुहोस्।",
+      "genre-list": {
+        "artsAndPhotography": {
+          "title": "कला र फोटोग्राफी"
+        },
+        "boxesSets": {
+          "title": "बक्स गरिएका पुस्तकहरु"
+        },
+        "businessInvesting": {
+          "title": "व्यापार र लगानी"
+        },
+        "fictionLitreature": {
+          "title": "कथा र साहित्य"
+        },
+        "foreignLanguage": {
+          "title": "विदेशी भाषाहरू"
+        },
+        "historyBioSocial": {
+          "title": "इतिहास, जीवनी, र सामाजिक विज्ञान"
+        },
+        "kidsTeensy": {
+          "title": "बच्चा र किशोरहरु"
+        },
+        "learningReference": {
+          "title": "सिकाइ र सन्दर्भ"
+        },
+        "nepali": {
+          "title": "नेपाली"
+        },
+        "miscellaneous": {
+          "title": "विविध"
+        },
+        "nature": {
+          "title": "प्रकृति"
+        }
+      }
+    },
+    "bestSeller": {
+      "title": "उत्कृष्ट विक्रेता",
+      "sub-title": "हाम्रो उत्कृष्ट विक्रयकर्ता बीचको तपाईंको अर्को महान पढ्ने खोज्नुहोस्।",
+      "showAll": "सबै हेर्नुहोस्"
+    },
+    "newArrivals":{
+      "title": "नव आगन्तुक",
+      "sub-title":"ताजा आगमनहरू अन्वेषण गर्नुहोस् र तपाईंको अर्को महान पढ्ने खोज्नुहोस्।",
+      "showAll": "सबै हेर्नुहोस्"
+    }
+  },
+  "components": {
+    "productCard": {
+      "addToCart": "कार्ट म हल्नुहोस",
+      "currency": "रु."
     }
   }
+}

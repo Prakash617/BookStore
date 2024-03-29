@@ -1,6 +1,59 @@
 {
-    "IndexPage": {
-      "title": "next-intl example",
-      "description": "Welcome to the Next.js Internationalization (i18n) example! This demo showcases the power of the App Router and how to manage multilingual content seamlessly using next-intl."
+  "home": {
+    "genre": {
+      "title": "Genres",
+      "sub-title": "Browse Our Extensive Collection of Books Across Different Genres.",
+      "genre-list": {
+        "artsAndPhotography": {
+          "title": "Arts & Photography"
+        },
+        "boxesSets": {
+          "title": "Boxes Sets"
+        },
+        "businessInvesting": {
+          "title": "Bussiness & Investing"
+        },
+        "fictionLitreature": {
+          "title": "Fiction & Literature"
+        },
+        "foreignLanguage": {
+          "title": "Foreign Languages"
+        },
+        "historyBioSocial": {
+          "title": "History, Biography, and Social Science"
+        },
+        "kidsTeensy": {
+          "title": "Kids and Teensy"
+        },
+        "learningReference": {
+          "title": "Learning and Reference"
+        },
+        "nepali": {
+          "title": "Nepali"
+        },
+        "miscellaneous": {
+          "title": "Miscellaneous"
+        },
+        "nature": {
+          "title": "Nature"
+        }
+      }
+    },
+    "bestSeller": {
+      "title": "Best Sellers",
+      "sub-title": "Find Your Next Great Read Among Our Best Sellers.",
+      "showAll": "Show All"
+    },
+    "newArrivals":{
+      "title": "New Arrivals",
+      "sub-title":"Explore Fresh Arrivals and Find Your Next Great Read.",
+      "showAll": "Show All"
+    }
+  },
+  "components": {
+    "productCard": {
+      "addToCart": "Add To Cart",
+      "currency": "Rs."
     }
   }
+}
