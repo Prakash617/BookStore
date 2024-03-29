@@ -20,7 +20,7 @@ const Navbar = (props: Props) => {
 
   const pathName = usePathname()
   const segments = pathName.split('/')
-  let [isOpen, setIsOpen] = useState(true);
+  let [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
     setIsOpen(false);
