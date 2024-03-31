@@ -167,8 +167,8 @@ const AccordionMenu = () => {
                                 <AccordionContent className='bg-white px-5'>
                                     {category.genre.map((genre: any, genreIndex: number) => {
                                         return (
-                                            <Link href={'#'}>
-                                                <div key={genreIndex} className='p-2 text-gray-800 text-md rounded-md hover:bg-blue-200' >
+                                            <Link href={'#'} key={genreIndex}>
+                                                <div  className='p-2 text-gray-800 text-md rounded-md hover:bg-blue-200' >
                                                     {genre.name}
                                                 </div>
                                             </Link>
