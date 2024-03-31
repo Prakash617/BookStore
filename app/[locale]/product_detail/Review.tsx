@@ -42,11 +42,11 @@ const ProductReview1 = () => {
             <div className={"md:block " + (menu ? "block" : "hidden")}>
               <div className="mt-6 flex justify-start items-center flex-row space-x-2.5">
                 <div>
-                  <img
+                  {/* <img
                     src="https://i.ibb.co/QcqyrVG/Mask-Group.png"
                     
                     alt="girl-avatar"
-                  />
+                  /> */}
                 </div>
                 <div className="flex flex-col justify-start items-start space-y-2">
                   <p className="text-base font-medium leading-none text-gray-800">
@@ -59,7 +59,7 @@ const ProductReview1 = () => {
               </div>
             </div>
             <div className="w-full flex justify-start items-start flex-col bg-gray-50 md:px-8 py-8">
-              <div className="flex flex-col md:flex-row flex justify-between w-full">
+              <div className=" flex-col md:flex-row flex justify-between w-full">
                 <div className="flex flex-row justify-between items-start">
                   <p className="text-xl md:text-2xl font-medium leading-normal text-gray-800">
                     Comfortable and minimal, just how I like it!

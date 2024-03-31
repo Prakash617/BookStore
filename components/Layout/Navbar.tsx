@@ -35,6 +35,7 @@ const Navbar = (props: Props) => {
       <div className='py-5 px-32 shadow-md'>
         <div className='flex items-center md:justify-center lg:justify-between'>
           <div className='flex gap-3 items-center text-lg'>
+            <Link  href={"/"}>
               <Image
               alt="booksmandala logo"
               loading="lazy"
@@ -47,13 +48,14 @@ const Navbar = (props: Props) => {
               src="/ul53R1493KevFx63fFFnk7Nduk8qaz2BqtdT8mYP.gif"
               style={{ color: "transparent" }}
             />
+            </Link>
             <span className=''><BooksMenu /></span>
             <Link className='hover:text-sky-600' href={'/' + segments[1] + '/discount-deals'}>Deals</Link>
           </div>
           <div className="flex gap-3 items-center text-lg">
             <SearchBar />
             <MoonIcon className="cursor-pointer" />
-            <Link href={"#"}>
+            <Link href={"/en/cart"}>
               <ShoppingCart />
             </Link>
             {/* <Link className='hover:text-sky-600' href={'#'}>Login</Link> */}

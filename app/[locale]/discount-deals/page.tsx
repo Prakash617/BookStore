@@ -3,6 +3,7 @@ import React, { Fragment, useState } from "react";
 import { IoIosClose } from "react-icons/io";
 import { Dialog, Tab, Transition } from "@headlessui/react";
 import Banner from "@/components/Banner";
+import Link from "next/link";
 
 type Props = {};
 function classNames(...classes: any) {
@@ -207,10 +208,12 @@ const Discount_deals = (props: Props) => {
 
               </div>
               <div>
+                <Link href={"/"}>
 
             <button className="bg-transparent  hover:bg-indigo-800 ease-in duration-200 text-indigo-800  font-semibold hover:text-white py-2 px-4 border border-indigo-800 hover:border-transparent rounded">
               Explore Books
               </button>
+                </Link>
               </div>
 
             </div>
@@ -221,9 +224,12 @@ const Discount_deals = (props: Props) => {
             <h2 className="text-2xl font-semibold ">Discount Deals</h2>
             <p className="text-sm mb-4">Discount Deals. Save money with flat or percentage discounts</p>
             <div className="bg-[#F1F1F1] h-48 rounded-md w-full flex justify-center items-center">
+            <Link href={"/"}>
+
             <button className="bg-transparent  hover:bg-indigo-800 ease-in duration-200 text-indigo-800  font-semibold hover:text-white py-2 px-4 border border-indigo-800 hover:border-transparent rounded">
               Explore Books
               </button>
+              </Link>
 
             </div>
 
