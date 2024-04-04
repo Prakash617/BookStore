@@ -1,3 +1,5 @@
+"use client"
+import ChartOne from '@/components/Layout/ChartOne'
 import SideBar from '@/components/Layout/SideBar'
 import React from 'react'
 
@@ -11,6 +13,7 @@ const Dashboard = (props: Props) => {
     <>
     <SideBar/>
     <div className="p-4 sm:ml-64">
+      <ChartOne/>
       
       sdsd
     </div>
