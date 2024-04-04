@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Layout/Navbar";
 import Footer from "@/components/Layout/Footer";
-import SideCart from "@/components/Layout/SideCart";
+import NavBar2 from "@/components/Layout/NavBar2";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,10 +21,11 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={inter.className}>
-                <Navbar />
+                {/* <NavBar2/> */}
+                {/* <Navbar /> */}
                 {/* <SideCart open={false} setOpen={undefined}/> */}
                 {children}
-                <Footer />
+                {/* <Footer /> */}
             </body>
         </html>
     );
